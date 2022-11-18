@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+.calculator {
+  display: grid;
+  grid-template-columns: 80px 80px 80px 80px;
+  grid-template-rows: 80px 80px 80px 80px 80px 80px;
+  justify-content: center;
+  grid-template-areas:
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main";
+}
+
+.calculator_display {
+  grid-area: header;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
