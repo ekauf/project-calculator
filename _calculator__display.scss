@@ -1,1 +1,8 @@
 @use "variables" as *;
+
+.calculator__display {
+  background-color: $primary-color;
+  font-size: 80px;
+  color: white;
+  text-align: right;
+}

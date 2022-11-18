@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
   background-color: #22252d;
-  font-size: 64px;
 }
 
 .calculator {
@@ -14,7 +13,7 @@
   grid-template-areas: "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main";
 }
 
-.calculator_display {
+.calculator__display {
   grid-area: header;
   grid-row-start: 1;
   grid-row-end: 1;
@@ -29,4 +28,11 @@
   text-align: center;
   border: none;
   border-radius: 25%;
+}
+
+.calculator__display {
+  background-color: #22252d;
+  font-size: 80px;
+  color: white;
+  text-align: right;
 }/*# sourceMappingURL=style.css.map */
