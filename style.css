@@ -5,6 +5,8 @@
 }
 
 .calculator {
+  background-color: #22252d;
+  font-size: 64px;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px 80px 80px 80px 80px;
@@ -16,4 +18,15 @@
   grid-area: header;
   grid-row-start: 1;
   grid-row-end: 1;
+}
+
+.button {
+  background-color: #292d36;
+  color: white;
+  padding: 20px;
+  font-size: 26px;
+  margin: 4px 2px;
+  text-align: center;
+  border: none;
+  border-radius: 50%;
 }/*# sourceMappingURL=style.css.map */

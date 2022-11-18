@@ -1,6 +1,8 @@
 @use "variables" as *;
 
 .calculator {
+  background-color: $primary-color;
+  font-size: 64px;
   display: grid;
   grid-template-columns: 80px 80px 80px 80px;
   grid-template-rows: 80px 80px 80px 80px 80px 80px;
