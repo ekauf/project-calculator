@@ -1,4 +1,5 @@
 @use "variables" as *;
 @use "reset";
 @use "calculator";
-@use "buttons";
+@use "calculator__buttons";
+@use "calculator__display";
