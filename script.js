@@ -1,8 +1,21 @@
 const calculator = document.querySelector(".calculator");
-const buttons = document.querySelector(".calculator__button");
+const buttons = Array.from(document.querySelectorAll(".calculator__button"));
+const display = document.querySelector(".calculator__display");
 
-const handleButtonClick = () => {
-  console.log("I was clicked");
-};
+// const handleButtonClick = Array.from.buttons.forEach((button) => {
+//   console.log(button.innerHTML);
+// });
 
-calculator.addEventListener("click", handleButtonClick);
+// buttons.forEach((button) => {
+//   console.log(button.innerHTML);
+// });
+
+// const handleButtonClick = (button) => {
+//   console.log(button.innerHTML);
+// };
+
+buttons.map((button) => {
+  button.addEventListener("click", (buttonClick) => {
+    console.log(button.innerHTML);
+  });
+});
