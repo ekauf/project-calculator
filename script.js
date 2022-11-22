@@ -1,3 +1,5 @@
+// not in use
+
 class Calculator {
   constructor(previousOperandDisplay, currentOperandDisplay) {
     this.previousOperandDisplay = previousOperandDisplay;
