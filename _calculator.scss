@@ -7,7 +7,7 @@
   justify-content: center;
   grid-template-areas:
     "header header header header"
-    "header header header header"
+    "header2 header2 header2 header2"
     "main main main main"
     "main main main main"
     "main main main main"
@@ -15,8 +15,12 @@
     "main main main main";
 }
 
-.calculator__display {
+.previous-operand {
   grid-area: header;
+}
+
+.current-operand {
+  grid-area: header2;
   grid-row-start: 1;
   grid-row-end: 1;
 }

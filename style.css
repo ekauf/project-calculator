@@ -10,11 +10,15 @@
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
   justify-content: center;
-  grid-template-areas: "header header header header" "header header header header" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main";
+  grid-template-areas: "header header header header" "header2 header2 header2 header2" "main main main main" "main main main main" "main main main main" "main main main main" "main main main main";
 }
 
-.calculator__display {
+.previous-operand {
   grid-area: header;
+}
+
+.current-operand {
+  grid-area: header2;
   grid-row-start: 1;
   grid-row-end: 1;
 }
@@ -30,7 +34,7 @@
   border-radius: 25%;
 }
 
-.calculator__display {
+.current-operand .previous-operand {
   background-color: #22252d;
   font-size: 80px;
   color: white;

@@ -1,6 +1,6 @@
 @use "variables" as *;
 
-.calculator__display {
+.current-operand .previous-operand {
   background-color: $primary-color;
   font-size: 80px;
   color: white;
