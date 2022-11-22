@@ -1,3 +1,30 @@
+class Calculator {
+  constructor(previousOperandDisplay, currentOperandDisplay) {
+    this.previousOperandDisplay = previousOperandDisplay;
+    this.currentOperandDisplay = currentOperandDisplay;
+    this.clear();
+  }
+
+  allClear() {
+    this.currentOperand = "";
+    this.previousOperand = "";
+    this.operation = undefined;
+  }
+
+  backspace() {}
+
+  appendNumber(number) {
+    if (number === "." && this.currentOperand.includes(".")) return;
+    this.currentOperand = this.currentOperand.toString() + number.toString();
+  }
+
+  chooseOperation(operation) {}
+
+  calculate() {}
+
+  updateDisplay() {}
+}
+
 const numberButtons = document.querySelectorAll("[data-number");
 const operationButtons = document.querySelectorAll("[data-operation]");
 const allClearButton = document.querySelector("[data-all-clear]");
@@ -17,31 +44,14 @@ numberButtons.forEach((button) => {
   });
 });
 
+operationButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    calculator.chooseOperation(button.innerHTML);
+    calculator.updateDisplay();
+  });
+});
+
 const calculator = new Calculator(
   previousOperandDisplay,
   currentOperandDisplay
 );
-
-class Calculator {
-  constructor(previousOperandDisplay, currentOperandDisplay) {
-    this.previousOperandDisplay = previousOperandDisplay;
-    this.currentOperandDisplay = currentOperandDisplay;
-    this.clear();
-  }
-
-  allClear() {
-    this.currentOperand = "";
-    this.previousOperand = "";
-    this.operation = undefined;
-  }
-
-  backspace() {}
-
-  appendNumber(number) {}
-
-  chooseOperation(operation) {}
-
-  calculate() {}
-
-  updateDisplay() {}
-}
