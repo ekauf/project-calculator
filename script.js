@@ -9,3 +9,39 @@ const previousOperandDisplay = document.querySelector(
   "[data-previous-operand]"
 );
 const currentOperandDisplay = document.querySelector("[data-current-operand]");
+
+numberButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    calculator.appendNumber(button.innerHTML);
+    calculator.updateDisplay();
+  });
+});
+
+const calculator = new Calculator(
+  previousOperandDisplay,
+  currentOperandDisplay
+);
+
+class Calculator {
+  constructor(previousOperandDisplay, currentOperandDisplay) {
+    this.previousOperandDisplay = previousOperandDisplay;
+    this.currentOperandDisplay = currentOperandDisplay;
+    this.clear();
+  }
+
+  allClear() {
+    this.currentOperand = "";
+    this.previousOperand = "";
+    this.operation = undefined;
+  }
+
+  backspace() {}
+
+  appendNumber(number) {}
+
+  chooseOperation(operation) {}
+
+  calculate() {}
+
+  updateDisplay() {}
+}

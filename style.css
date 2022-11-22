@@ -5,7 +5,7 @@
   background-color: #22252d;
 }
 
-.calculator {
+.calculator__grid {
   display: grid;
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
