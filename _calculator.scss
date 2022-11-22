@@ -8,14 +8,6 @@
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px 100px;
   background-color: $primary-color;
-  //   grid-template-areas:
-  //     "header header header header"
-  //     "header2 header2 header2 header2"
-  //     "main main main main"
-  //     "main main main main"
-  //     "main main main main"
-  //     "main main main main"
-  //     "main main main main";
 }
 
 .output {
@@ -28,13 +20,3 @@
   word-wrap: break-word;
   word-break: break-all;
 }
-
-// .previous-operand {
-//   grid-area: header;
-// }
-
-// .current-operand {
-//   grid-area: header2;
-//   grid-row-start: 1;
-//   grid-row-end: 1;
-// }

@@ -10,14 +10,20 @@ const previousOperandDisplay = document.querySelector(
 );
 const currentOperandDisplay = document.querySelector("[data-current-operand]");
 
-const clickNumberButton = (event) => {
-  let display = event.target.innerHTML;
-  if (display.innerHTML == "0");
-  {
-    display.innerHTML = display;
-  }
+const clickNumberButton = numberButtons.forEach((number) => {
+  number.addEventListener("click", (e) => {
+    currentOperandDisplay.innerHTML += number.innerHTML;
+  });
+});
+
+const clickOperatorButton = operationButtons.forEach((operator) => {
+  operator.addEventListener("click", (e) => {
+    currentOperandDisplay.innerHTML += operator.innerHTML;
+  });
+});
+
+const clearButton = () => {
+  currentOperandDisplay.innerHTML = ` `;
 };
 
-for (let i = 0; i < numberButtons.length; i++) {
-  numberButtons[i].addEventListener("click", clickNumberButton);
-}
+allClearButton.addEventListener("click", clearButton);
