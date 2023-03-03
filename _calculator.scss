@@ -1,13 +1,23 @@
 @use "variables" as *;
 
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  background-color: black;
+}
+
 .calculator__grid {
+  background-color: $primary-color;
+  border: white solid 1px;
+  border-radius: 30px;
+  padding: 2rem;
+  width: 27rem;
   display: grid;
   justify-content: center;
-  align-content: center;
-  min-height: 100vh;
   grid-template-columns: 100px 100px 100px 100px;
   grid-template-rows: 100px 100px 100px 100px 100px;
-  background-color: $primary-color;
 }
 
 .output {
@@ -16,7 +26,10 @@
   align-items: flex-end;
   justify-content: space-around;
   flex-direction: column;
-  padding: 10px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   word-wrap: break-word;
   word-break: break-all;
+  border: white solid 1px;
+  border-radius: 20px;
 }
