@@ -1,14 +1,12 @@
 @use "variables" as *;
 
 .current-operand {
-  background-color: $primary-color;
   font-size: 80px;
   color: white;
   text-align: right;
 }
 
 .previous-operand {
-  background-color: $primary-color;
   font-size: 48px;
   color: aqua;
   text-align: right;
